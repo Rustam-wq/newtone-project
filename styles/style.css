@@ -1,0 +1,326 @@
+body{
+	margin: 0;
+
+	font-size: 15px;
+	line-height: 1.6;
+	color: #333;
+}
+a{
+	text-decoration: none;
+}
+
+*{
+	box-sizing: border-box;
+	font-family: 'Yusei Magic', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+	vertical-align: top;
+}
+
+.intro{
+	width: 100px;
+	height: 100vh;
+	display: flex;
+	
+	background-size: cover;
+}
+
+.header_inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header {
+	width: 100%;
+	display: block;
+	position: relative;
+	top:  0;
+	left: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	right: 0;
+	z-index:1000;
+	background-color: #14141f;
+}
+
+.header_logo{
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+}
+
+
+.navigation{
+	font-size: 15px;
+	text-transform: uppercase;
+	align-content: center;
+	vertical-align: text-top;
+}
+
+
+.nav_link{
+	display:  inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+	color: white;
+	text-decoration: none;
+	transition: color .2s linear;
+
+}
+.nav_link:hover{
+		color:red;
+
+}
+
+/* Слайдер: */
+.slider{
+    max-width: 100%;
+    /* Положение элемента устанавливается относительно его исходной позиции: */
+    position: relative;
+    /* Центрируем по горизонтали: */
+    margin: auto;
+    height: 500px;
+}
+
+/* Картинка масштабируется по отношению к родительскому элементу: */
+.slider .item img {
+    /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+/* Кнопки назад и вперёд: */
+.slider .previous, .slider .next {
+    /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+    cursor: pointer;
+    /* Положение элемента задаётся относительно границ браузера: */
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    /* Оформление самих кнопок: */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    /* Плавное появление фона при наведении курсора: */
+    transition: 0.6s ease;
+    /* Скругление границ: */
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора на кнопки добавляем фон кнопок: */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация слайдов: */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    /* Устанавливаем и изменяем степень прозрачности: */
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+ 
+.post_header{
+   display: flex;
+   justify-content: flex-end;
+   text-transform: uppercase;
+
+}
+
+.post_container{
+	align-items: center;
+	max-width: 1200px;
+}
+
+.category_link{
+	margin-right: 100px;
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	color: black;
+	transition: color .2s linear;
+}
+
+.category_link:hover{
+	color: purple;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.product_item{
+	width: 400px;
+	text-align: center;
+	margin: 10 auto;
+	border-bottom: 2px solid #f5f5f5;
+	background: white;
+	font-family: "Open Sans";
+	transition: .3s ease-in;
+	flex-grow: 1;
+	flex-basis: 16%;
+	padding: 2%;
+}
+
+.product_item:hover{
+	border-bottom: 3px solid #fc5a5a;
+}
+
+.product_item img{
+	display: block;
+	width: 400px;
+	/*height: 123px;*/
+}
+
+.product_list{
+	background: #fafafa;
+	padding: 15px 0px;
+}
+
+.product-list h3 {
+   font-size: 18px;
+   font-weight: 400;
+   color: #444444;
+   margin: 0 0 10px 0;
+}
+.price {
+   font-size: 16px;
+   color: #fc5a5a;
+   display: block;
+   margin-bottom: 12px;
+}
+.button {
+   text-decoration: none;
+   display: inline-block;
+   padding: 0 12px;
+   background: #cccccc;
+   color: white;
+   text-transform: uppercase;
+   font-size: 12px;
+   line-height: 28px;
+   transition: .3s ease-in;
+}
+.product-item:hover .button {
+   background: #fc5a5a;
+}
+
+
+
+.product_shtanu{
+	width: 400px;
+	text-align: center;
+	margin: 0 auto;
+	border-bottom: 2px solid #f5f5f5;
+	background: white;
+	font-family: "Open Sans";
+	transition: .3s ease-in;
+}
+
+.product_shtanu:hover{
+	border-bottom: 3px solid #fc5a5a;
+}
+
+.product_shtanu img{
+	display: block;
+	width: 400px;
+	/*height: 123px;*/
+}
+
+.product_list{
+	background: #fafafa;
+	padding: 15px 0px;
+}
+
+.product-list h3 {
+   font-size: 18px;
+   font-weight: 400;
+   color: #444444;
+   margin: 0 0 10px 0;
+}
+.price {
+   font-size: 16px;
+   color: #fc5a5a;
+   display: block;
+   margin-bottom: 12px;
+}
+.button {
+   text-decoration: none;
+   display: inline-block;
+   padding: 0 12px;
+   background: #cccccc;
+   color: white;
+   text-transform: uppercase;
+   font-size: 12px;
+   line-height: 28px;
+   transition: .3s ease-in;
+}
+.product-item:hover .button {
+   background: #fc5a5a;
+}
+
+.product-item-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/*footer*/
+.footer{
+   width: 100%;
+   background-color: #14141f;
+   position: inherit;
+   bottom: 0;
+   left: 0;
+
+}
+
+.info_block{
+	color: white;
+	max-width: 50%;
+	padding-left: 10px;
+}
+
+.logo_social{
+	max-width: 50%;
+	padding-right: 10px;
+	color: #fff;
+}
+.logo_svg{
+	margin: 0 5px;
+	width: 40px;
+	display: inline-block;
+	vertical-align: top;
+}
+.footer_container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.logo_inner{
+	margin-top: 10px;
+	margin-left: 5px;
+}
