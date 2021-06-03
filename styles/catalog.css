@@ -127,6 +127,8 @@ h1, h2, h3, h4, h5, h6{
 .product-item {
    position: relative;
    overflow: hidden;
+   width: 225px;
+   height: 225px;
 }
 .product-wrap img {
 	margin: 10px;
