@@ -38,12 +38,3 @@ function showSlides(n) {
     /* Делаем элемент блочным: */
     slides[slideIndex - 1].style.display = "block";    
 }
-var slides = document.querySelectorAll('#slider .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2000);
-
-function nextSlide(){
-  slider[currentSlide].className = 'slide';
-  currentSlide = (currentSlide+1)%slides.length;
-  slider[currentSlide].className = 'slide showing';
-}

@@ -182,7 +182,8 @@ h1, h2, h3, h4, h5, h6{
 	transition: .3s ease-in;
 	flex-grow: 1;
 	flex-basis: 16%;
-	padding: 2%;
+	border: 3px solid transparent;
+	/*padding: 2%;*/
 }
 
 .product_item:hover{
@@ -192,7 +193,9 @@ h1, h2, h3, h4, h5, h6{
 .product_item img{
 	display: block;
 	width: 400px;
-	/*height: 123px;*/
+	height: 500px;
+    object-fit: cover;
+    margin: 0 auto;
 }
 
 .product_list{
@@ -283,6 +286,7 @@ h1, h2, h3, h4, h5, h6{
 
 .product-item-container{
 	display: flex;
+	margin-top: 15px;
 	flex-wrap: wrap;
 }
 
@@ -294,6 +298,7 @@ h1, h2, h3, h4, h5, h6{
    position: inherit;
    bottom: 0;
    left: 0;
+   margin-top:5px ;
 
 }
 
